@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase | E-Commerce</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Library CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- Preload Fonts and CSS for faster rendering -->
+  <link rel="preload" href="style.css" as="style">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar" data-aos="fade-down">
+    <div class="logo">ShopEase</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="cart.html">Cart <i class="fas fa-shopping-cart"></i></a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-up">
+    <div class="hero-content">
+      <h1 data-aos="fade-up" data-aos-delay="200">Shop The Best Deals</h1>
+      <p data-aos="fade-up" data-aos-delay="400">Trendy products at unbeatable prices. Shop now and enjoy free shipping!</p>
+      <a href="product.html" class="btn" data-aos="zoom-in" data-aos-delay="600">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories">
+    <h2 data-aos="fade-up">Shop by Categories</h2>
+    <div class="category-container">
+      <div class="category" data-aos="zoom-in" data-aos-delay="200">
+        <picture>
+          <source srcset="images/lap.webp" type="image/webp">
+          <img src="images/lap.webp" alt="Electronics" loading="lazy" width="300" height="200">
+        </picture>
+        <h3>Laptop Accessories</h3>
+      </div>
+      <div class="category" data-aos="zoom-in" data-aos-delay="400">
+        <picture>
+          <source srcset="images/mobile.webp" type="image/webp">
+          <img src="images/mobile.webp" alt="Fashion" loading="lazy" width="300" height="200">
+        </picture>
+        <h3>Phone Accessories</h3>
+      </div>
+      <div class="category" data-aos="zoom-in" data-aos-delay="600">
+        <picture>
+          <source srcset="images/lcd.webp" type="image/webp">
+          <img src="images/lcd.webp" alt="Home" loading="lazy" width="300" height="200">
+        </picture>
+        <h3>LCD</h3>
+      </div>
+      <div class="category" data-aos="zoom-in" data-aos-delay="800">
+        <picture>
+          <source srcset="images/watch.webp" type="image/webp">
+          <img src="images/watch.webp" alt="Beauty" loading="lazy" width="300" height="200">
+        </picture>
+        <h3>Smart Watches</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="featured-products">
+    <h2 data-aos="fade-up">Featured Products</h2>
+    <div class="products-grid">
+      <div class="product" data-aos="fade-up" data-aos-delay="200">
+        <picture>
+          <source srcset="images/headphone.webp" type="image/webp">
+          <img src="images/headphone.webp" alt="Product 1" loading="lazy" width="250" height="250">
+        </picture>
+        <h3>Wireless Headphones</h3>
+        <p>$50</p>
+        <a href="product.html" class="btn">View Details</a>
+      </div>
+      <div class="product" data-aos="fade-up" data-aos-delay="400">
+        <picture>
+          <source srcset="images/keyboard.webp" type="image/webp">
+          <img src="images/keyboard.webp" alt="Product 2" loading="lazy" width="250" height="250">
+        </picture>
+        <h3>Keyboard</h3>
+        <p>$70</p>
+        <a href="product.html" class="btn">View Details</a>
+      </div>
+      <div class="product" data-aos="fade-up" data-aos-delay="600">
+        <picture>
+          <source srcset="images/cherger.webp" type="image/webp">
+          <img src="images/cherger.webp" alt="Product 3" loading="lazy" width="250" height="250">
+        </picture>
+        <h3>Mobile Charger</h3>
+        <p>$120</p>
+        <a href="product.html" class="btn">View Details</a>
+      </div>
+      <div class="product" data-aos="fade-up" data-aos-delay="800">
+        <picture>
+          <source srcset="images/speek.webp" type="image/webp">
+          <img src="images/speek.webp" alt="Product 4" loading="lazy" width="250" height="250">
+        </picture>
+        <h3>Bluetooth Speaker</h3>
+        <p>$35</p>
+        <a href="product.html" class="btn">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" data-aos="fade-up">
+    <p>&copy; 2025 ShopEase | All Rights Reserved</p>
+  </footer>
+
+  <!-- AOS Script -->
+  
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script> <!-- Aapki custom JS file -->
+</body>
+</html>

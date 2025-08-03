@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | E-commerce</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" data-aos="fade-down">
+    <div class="logo">ShopEase</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+      <li><a href="checkout.html" class="active">Checkout</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </nav>
+
+  <!-- Checkout Section -->
+  <section class="checkout-page">
+    <h1 class="section-title" data-aos="fade-up">Checkout</h1>
+    <div class="checkout-container">
+      
+      <!-- Billing Form -->
+      <div class="billing-form" data-aos="fade-right">
+        <h2>Billing Details</h2>
+        <form id="checkout-form">
+          <label>Full Name</label>
+          <input type="text" id="name" placeholder="John Doe" required>
+          
+          <label>Email</label>
+          <input type="email" id="email" placeholder="example@mail.com" required>
+          
+          <label>Address</label>
+          <input type="text" id="address" placeholder="123 Main Street" required>
+          
+          <label>City</label>
+          <input type="text" id="city" placeholder="New York" required>
+          
+          <label>Postal Code</label>
+          <input type="text" id="postal" placeholder="10001" required>
+          
+          <label>Payment Method</label>
+          <select id="payment" required>
+            <option value="">Select</option>
+            <option value="credit">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="cod">Cash on Delivery</option>
+          </select>
+          
+          <button type="submit" class="btn">Place Order</button>
+          <p id="checkout-status"></p>
+        </form>
+      </div>
+
+      <!-- Order Summary -->
+      <div class="order-summary" data-aos="fade-left">
+        <h2>Order Summary</h2>
+        <ul id="order-items"></ul>
+        <h3>Total: $<span id="order-total">0</span></h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ShopEase | All Rights Reserved</p>
+  </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- Custom JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

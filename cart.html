@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart | E-commerce</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" data-aos="fade-down">
+    <div class="logo">ShopEase</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html" class="active"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+      <li><a href="checkout.html">Checkout</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </nav>
+
+  <!-- Cart Section -->
+  <section class="cart-page">
+    <h1 class="section-title" data-aos="fade-up">Your Shopping Cart</h1>
+    <div class="cart-container" data-aos="zoom-in">
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+          <!-- Cart items will be injected by JavaScript -->
+        </tbody>
+      </table>
+
+      <div class="cart-summary" data-aos="fade-up">
+        <h3>Total: $<span id="cart-total">0</span></h3>
+        <a href="checkout.html" class="btn">Proceed to Checkout</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ShopEase | All Rights Reserved</p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- Custom JS -->
+<script src="script.js">
+  
+</script>>
+</body>
+</html>
